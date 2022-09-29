@@ -2,15 +2,22 @@
 
 function factorial($n)
 {
-    if($n <= 1) {
+    if (!is_int($n) || $n < 0) {
+        return 'Введите натуральное число';
+    }
+
+    if($n === 0 || $n === 1) {
         return 1;
     }
 
     return $n * factorial($n - 1);
 }
 
-echo factorial(1) . "\n"; // 1
-echo factorial(5) . "\n"; // 120
-echo factorial(3) . "\n"; // 6
-echo factorial(0) . "\n"; // 1
-echo factorial(-1) . "\n";// 1
+echo factorial(1) . "\n";
+echo factorial(5) . "\n";
+echo factorial(0) . "\n";
+echo factorial(-1) . "\n";
+echo factorial(2.3) . "\n";
+echo factorial('str');
+$num = 3;
+echo factorial($num);
