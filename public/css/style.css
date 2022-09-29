@@ -1,0 +1,17 @@
+ul > li {
+    list-style-type: none;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+#preview {
+    width: 45%;
+}
+
+#news {
+    width: 30%;
+}
+
+#mobile {
+    width: 20%;
+}
